@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlimFlare</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Movies</title>
+    <link rel="stylesheet" href="downlaod.css">
+</head>
+<body>
+     <!-- Loading Animation -->
+     <div id="loader"></div>
+
+   <!-- Movie Gallery -->
+   <section class="gallery">
+    <h2>Popular Movies</h2>
+    <div class="movie-grid">
+        <div class="movie-item">
+            <a herf = "movie1.mkv">
+            <img src="images/movie1.jpg" alt="Movie 1">
+            <h3>Boss (akshay kumar)</h3>
+       <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+</div></a>
+        <div class="movie-item">
+            <img src="images/movie1.jpg" alt="Movie 2">
+            <h3>Boss full HD</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/pushpa.jpg" alt="Movie 2">
+            <h3>Pushpa The rise full movie</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/pushpa2.jpeg" alt="Movie 2">
+            <h3>Pushpa 2 The rule</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/santosh.jpeg" alt="Movie 2">
+            <h3>Santosh</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/sarfira.jpg" alt="Movie 2">
+            <h3>Sarfira</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/sector 36.jpg" alt="Movie 2">
+            <h3>Sector 36</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <div class="movie-item">
+            <img src="images/sikandar.jpeg" alt="Movie 2">
+            <h3>sikandar ka maqudar</h3>
+            <a href="images/movie1.mkv" download class="download-btn">Download File</a>
+
+        </div>
+        <script>
+            // Simulate loading
+            window.addEventListener('load', function() {
+                const loader = document.getElementById('loader');
+                const content = document.getElementById('content');
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    content.style.display = 'block';
+                }, 2000); // Adjust the timeout as needed
+            });
+        </script>
+</body>
+</html>

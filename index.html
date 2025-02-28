@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img" href="images/LOGO.jpg">
+
+    <title>FlimFlare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Loading Animation -->
+    <div id="loader"></div>
+ <!-- Main Content -->
+    <div id="content" style="display:none;">
+ <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <img src="images/LOGO.jpg" alt="MovieStream Logo">
+                <H2>FlimFlare</H2>
+            </div>
+            <nav>
+                <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="loginpage.html">Login/Signup</a></li>
+      <!-- Home Button and Search Bar -->
+      <details>
+        <summary>Search</summary>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Go</button>
+        </div>
+    </details>
+                    <li><a href="download movies.html">Movies</a></li>
+                    <li><a href="download movies.html">My List</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to FlimFlare</h1>
+                <p>Stream your favorite movies and series anytime, anywhere.</p>
+                <a href="download movies.html">
+                <button >Download movies</button>
+            </div></a>
+        </section>
+
+        <!-- Movie Gallery -->
+        <section class="gallery">
+            <h2>Popular Movies</h2>
+            <div class="movie-grid">
+                <div class="movie-item">
+                    <a herf = "movie1.mkv">
+                    <img src="images/movie1.jpg" alt="Movie 1">
+                    <h3>Boss (akshay kumar)</h3>
+                </div></a>
+                <div class="movie-item">
+                    <img src="images/pushpa.jpg" alt="Movie 2">
+                    <h3>Pushpa</h3>
+                </div>
+                <div class="movie-item">
+                    <img src="images/sarfira.jpg" alt="Movie 2">
+                    <h3>Sarfira Full HD</h3>
+                </div>
+                <div class="movie-item">
+                    <img src="images/sector 36.jpg" alt="Movie 2">
+                    <h3>Sector 36 Full</h3>
+                </div>
+                <!-- Add more movie items as needed -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We provide high-quality Movies and series for FREE</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 FlimFlare.com | All Rights Reserved
+            </div>
+        </footer>
+
+
+    <!-- Navigation Menu -->
+<nav>
+
+    <script>
+        // Simulate loading
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            setTimeout(() => {
+                loader.style.display = 'none';
+                content.style.display = 'block';
+            }, 2000); // Adjust the timeout as needed
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Loading Animation */
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 url('/images/loading.gif') no-repeat center center;
+    z-index: 9999;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd503;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/background.gif') no-repeat center center/cover;
+    color: #060000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #f40612;
+}
+
+/* Movie Gallery */
+.gallery {
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+
+.movie-item {
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.movie-item img:hover {
+    transform: scale(1.05);
+}
+
+.movie-item h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+a img {
+    border: none; /* Removes the default border */
+    transition: transform 0.3s; /* Adds a smooth transition effect */
+  }
+
+  a img:hover {
+    transform: scale(1.05); /* Scales the image up slightly on hover */
+  }
+  /* Navigation Menu Styles */
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns items horizontally */
+    background-color: #000000; /* Dark background color */
+  }
+
+  nav ul li {
+    margin-right: 20px; /* Space between menu items */
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    background-color: #ffffff; /* Darker shade on hover */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+/*search button --!>
+
+/* Styling for the summary element to look like a button */
+summary {
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    list-style: none;
+}
+
+/* Remove default triangle indicator from summary */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Styling for the search container */
+.search-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for the input field */
+.search-container input {
+    padding: 8px;
+    font-size: 14px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the search button */
+.search-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change background color of button on hover */
+.search-container button:hover {
+    background-color: #218838;
+}
+
+.gallery {
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-item {
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.movie-item img:hover {
+    transform: scale(1.05);
+}
+.movie-item h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
